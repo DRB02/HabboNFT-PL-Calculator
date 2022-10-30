@@ -1,3 +1,9 @@
+#keep this up to date if a new collection gets released
+collections = {
+    "furniture":"0xec4de0a00c694cc7957fb90b9005b24a3f4f8b99",
+    "clothes":"0x8c15d753c4336617890ff9e82c88aa047762b867"
+}
+
 #dependencies
 import subprocess
 import sys
@@ -16,12 +22,6 @@ try:
     from openpyxl.styles import PatternFill
 except:
     install_dependecies()
-
-#keep this up to date if a new collection gets released
-collections = {
-    "furniture":"0xec4de0a00c694cc7957fb90b9005b24a3f4f8b99",
-    "clothes":"0x8c15d753c4336617890ff9e82c88aa047762b867"
-}
 
 #more variables needed in the whole file 
 nftitems = {}
