@@ -9,7 +9,7 @@ HabboNFT P/L Calculator will generate an excel file for every NFT shop collectio
 - Click run.bat
 
 ### I know how to open and edit code
-- On line 21 is the collections dictionary where you can add new collections
+- On line 2 is the collections dictionary where you can add new collections
 - You can unquote (remove the #) on line 58 and 59 to get a JSON file output. Just like the example.json file.
 
 ### I can code in python
