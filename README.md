@@ -13,7 +13,7 @@ HabboNFT P/L Calculator will generate an excel file for every NFT shop collectio
 - You can unquote (remove the #) on line 58 and 59 to get a JSON file output. Just like the example.json file.
 
 ### I can code in python
-For your own sanity don't read my code
+- For your own sanity don't read my code
 
 ### I got an issue
-If you have a problem, if no one else can help and if you can find them, maybe you can hire the A-team.
+- If you have a problem, if no one else can help and if you can find them, maybe you can hire the A-team.
