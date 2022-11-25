@@ -8,6 +8,7 @@ collections = {
 import subprocess
 import sys
 import json
+import os
 
 def install_dependecies():
     subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'requests'])
@@ -110,3 +111,8 @@ for category in nftitems:
 
     #saving the excel file
     wb.save(category+".xlsx") 
+
+openfile = input('Open the files? (Y/N): ')
+if openfile == 'Y':
+    for category in nftitems:
+        os.system('start '+category+'.xlsx')
