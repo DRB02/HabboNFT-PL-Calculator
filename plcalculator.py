@@ -113,6 +113,6 @@ for category in nftitems:
     wb.save(category+".xlsx") 
 
 openfile = input('Open the files? (Y/N): ')
-if openfile == 'Y':
+if openfile.lower() == 'y':
     for category in nftitems:
         os.system('start '+category+'.xlsx')
