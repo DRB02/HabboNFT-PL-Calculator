@@ -2,7 +2,8 @@
 collections = {
     "furniture":"0xec4de0a00c694cc7957fb90b9005b24a3f4f8b99",
     "clothes":"0x8c15d753c4336617890ff9e82c88aa047762b867",
-    "pets":"0x792df6705032cd3ad8a6aa3b3b7b0a42c0b9759c"
+    "pets":"0x792df6705032cd3ad8a6aa3b3b7b0a42c0b9759c",
+    "addons":"0xacc8b12fd8b08ecea19fb586c0c744f423fc3dd2"
 }
 
 #dependencies
