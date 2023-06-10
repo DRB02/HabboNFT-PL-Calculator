@@ -33,8 +33,10 @@ ethprice=requests.get('https://min-api.cryptocompare.com/data/price?fsym=ETH&tsy
 eth = ethprice['USD']
 
 #gets the current price per credit
+# Only uses 10, 50, 100, 500 and 1000 for average ppc
 tokenamounts = ['Habbo Credit 10', 'Habbo Credit 50', 'Habbo Credit 100', 'Habbo Credit 500', 'Habbo Credit 1000']
 total = 0
+alllisted = 0
 for tokenamount in tokenamounts:
     r = requests.get('https://api.x.immutable.com/v1/orders?auxiliary_fee_percentages=1&auxiliary_fee_recipients=0x12cB8E42c7ec27d30df6Cb8f44aa6445D0e1a78C&buy_token_type=ETH&direction=asc&include_fees=true&order_by=buy_quantity_with_fees&page_size=48&sell_token_address=0xfbf1c1c09a94fe45ea8cc981c478816963ec958c&sell_token_type=ERC721&status=active&sell_token_name='+tokenamount).json()
     for results in r['result']:
@@ -46,8 +48,9 @@ for tokenamount in tokenamounts:
             tokens = int(tokenamount.replace('Habbo Credit ', ''))
             ppc = round(USDprice/tokens, 3)
             total = total + ppc
+            alllisted = alllisted + 1
             break
-total = (total/5)
+total = (total/alllisted)
 
 #pushes the products from the NFT shop into the nftitems dictionary
 for nfti in nftshop['items']:
